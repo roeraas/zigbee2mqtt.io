@@ -1,6 +1,6 @@
 ---
 title: "ORVIBO W40CZ control via MQTT"
-description: "Integrate your ORVIBO W40CZ via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendors bridge or gateway."
+description: "Integrate your ORVIBO W40CZ via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendor's bridge or gateway."
 addedAt: 2020-05-19T20:48:40Z
 pageClass: device-page
 ---
@@ -16,10 +16,10 @@ pageClass: device-page
 |     |     |
 |-----|-----|
 | Model | W40CZ  |
-| Vendor  | ORVIBO  |
-| Description | Smart curtain motor  |
+| Vendor  | [ORVIBO](/supported-devices/#v=ORVIBO)  |
+| Description | Smart curtain motor |
 | Exposes | cover (state, position), linkquality |
-| Picture | ![ORVIBO W40CZ](https://www.zigbee2mqtt.io/images/devices/W40CZ.jpg) |
+| Picture | ![ORVIBO W40CZ](https://www.zigbee2mqtt.io/images/devices/W40CZ.png) |
 
 
 <!-- Notes BEGIN: You can edit here. Add "## Notes" headline if not already present. -->
@@ -28,10 +28,13 @@ pageClass: device-page
 <!-- Notes END: Do not edit below this line -->
 
 
+
 ## Options
 *[How to use device type specific configuration](../guide/configuration/devices-groups.md#specific-device-options)*
 
 * `invert_cover`: Inverts the cover position, false: open=100,close=0, true: open=0,close=100 (default false). The value must be `true` or `false`
+
+* `cover_position_tilt_disable_report`: Do not publish set cover target position as a normal 'position' value (default false). The value must be `true` or `false`
 
 
 ## Exposes
